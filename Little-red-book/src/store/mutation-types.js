@@ -1,0 +1,7 @@
+export const CHANGE_HEADER_RIGHT_ICON = 'change_header_right_icon'
+export const SHOW_SEARCH_COP = 'show_search_cop'
+export const GET_HOME_DATA = 'get_home_data'
+export const GET_FIND_DATA = 'get_find_data'
+export const GET_BUY_DATA = 'get_buy_data'
+export const RENDER_DETAIL = 'render_detail'
+export const HIDDEN_DETAIL_COP = 'hidden_detail_cop'

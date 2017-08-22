@@ -1,0 +1,25 @@
+<%- include('header') %>
+<%- include('components/nav') %>
+<div class="container-fluid create">
+  <div class="row">
+    <div class="col-md-4">
+      <a href="/posts?author=<%= user._id %>">
+        <img class="avatar" src="/img/<%= user.avatar %>">
+      </a>
+    </div>
+    <div class="col-md-8">
+      <form action="/posts" method="post" class="form-create">
+        <div class="form-group">
+          <label>文章标题</label>
+          <input class="form-control" type="text" name="title">
+        </div>
+        <div class="form-group">
+          <label>文章内容</label>
+          <textarea class="form-control" name="content" rows="15"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">发表</button>
+      </form>
+    </div>
+  </div>
+</div>
+<%- include('footer') %>
